@@ -1,6 +1,6 @@
-# LMSGI01-E01 Correo
+# LMSGI02-E01 Correo
 
-![Logo de Team](https://github.com/ana-polo/LMSGI01-E01/blob/main/LMSGI.gif "Team logo")
+![Logo de Team](https://github.com/ana-polo/LMSGI02-E01/blob/main/LMSGI.gif "Team logo")
 
 ## Table of Contents
 
@@ -23,28 +23,25 @@ Ejemplo de código XML para el módulo de Lenguajes de Marcas y Sistemas de Gest
 ***
 
 *XML*
+*DTD*
 &nbsp;
 
 ### 3. Descripción del problema
 
 📝 **TO DO**
 
-    a.- Realizar un documento XML válido que estructure la información del siguiente e-mail:   
-    - Remitente: juanito@gmail.com        
-    - Destinatario: pepito@gmail.com
-    - Asunto: Saludos
-    - Mensaje: ¡Hola!, ¿te parece bien quedar el lunes y nos vemos? Saludos
-
-    c.- Modificar el documento anterior para que sobre cada destinatario se tenga información de su nombre y apellidos además de la dirección de correo electrónico (Juan González [juanito@gmail.com] y José López [pepito@gmail.com]
-
-    b.- Modificar el fichero anterior para que se pueda procesar un email enviado a varios destinatarios añadiendo a Isabel Fernández [isa@hotmail.com] y a Luis Lamas [luis@yahoo.com]
-
-    d.- Modificar el documento anterior para indicar si un destinatario directo del mensaje (Juan e Isabel) o si lo recibe como copia (Luis) o como copia oculta.
-
+    a.- Realizar un vocabulario interno utilizando el lenguaje DTD compatible con una instancia de un documento XML válido que estructure la información de un e-mail, que también habrá que construir.
+    Tener en cuenta que de cada email habrá que guardar:
+        - El nombre y correo electrónico del remitente y de cada uno de los destinatarios. De estos últimos, puede que haya que conocer el tipo de destinatario del que se trata (directo, en copia o en copia oculta).   
+        - Fecha de envío del mensaje, asunto, contenido del mensaje. En ocasiones será necesario saber si el mensaje está leido o sin leer.
+        
+    b.-  Repetir el ejecicio anterior, haciendo que el vocabulario sea externo.
+ 
 &nbsp;
 
 👀 **¡Atención!**
 
+- No utilizar atributos en el diseño de la gramática.
 - Prestar cuidado al uso de las marcas para tener un documento XML bien formado en todos los casos.
 
 &nbsp;
