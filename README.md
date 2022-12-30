@@ -14,7 +14,7 @@
 
 ***
 
-Ejemplo de código XML para el módulo de Lenguajes de Marcas y Sistemas de Gestión de Información (LMSGI) del grado superior de Administración de Sistemas Informáticos en Red.
+Ejemplo de código XML y DTD para el módulo de Lenguajes de Marcas y Sistemas de Gestión de Información (LMSGI) del grado superior de Administración de Sistemas Informáticos en Red.
 
 &nbsp;
 
@@ -22,18 +22,18 @@ Ejemplo de código XML para el módulo de Lenguajes de Marcas y Sistemas de Gest
 
 ***
 
-*XML*
-*DTD*
+- *XML*
+
+- *DTD*
 &nbsp;
 
 ### 3. Descripción del problema
 
 📝 **TO DO**
 
-    a.- Realizar un vocabulario interno utilizando el lenguaje DTD compatible con una instancia de un documento XML válido que estructure la información de un e-mail, que también habrá que construir.
-    Tener en cuenta que de cada email habrá que guardar:
-        - El nombre y correo electrónico del remitente y de cada uno de los destinatarios. De estos últimos, puede que haya que conocer el tipo de destinatario del que se trata (directo, en copia o en copia oculta).   
-        - Fecha de envío del mensaje, asunto, contenido del mensaje. En ocasiones será necesario saber si el mensaje está leido o sin leer.
+    a.- Realizar un vocabulario interno utilizando el lenguaje DTD compatible con una instancia de un documento XML válido que estructure la información de un e-mail, que también habrá que construir. Tener en cuenta que de cada email habrá que guardar:
+            - El nombre y correo electrónico del remitente y de cada uno de los destinatarios. De estos últimos, puede que haya que conocer el tipo de destinatario del que se trata (directo, en copia o en copia oculta).   
+            - Fecha de envío del mensaje, asunto, contenido del mensaje. En ocasiones será necesario saber si el mensaje está leido o sin leer.
         
     b.-  Repetir el ejecicio anterior, haciendo que el vocabulario sea externo.
  
