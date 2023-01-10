@@ -33,8 +33,8 @@ Ejemplo de código XML y DTD para el módulo de Lenguajes de Marcas y Sistemas d
 ### 3. Descripción del problema
 
 <details>
-<sumary>Leer las condiciones del problema</sumary>
-En el mundo mágico el principal deporte es el Quiditch, que se desarrolla mientras 14 jugadores, 
+<summary>Leer las condiciones del problema</summary>
+    En el mundo mágico el principal deporte es el Quiditch, que se desarrolla mientras 14 jugadores, 
 				 7 de cada equipo, vuelan en escobas al tiempo que esquivan las bludgers ( tipo de pelota hechizada 
 				 que persigue a los jugadores de forma indiscriminada ). En cada equipo hay siete jugadores: 
 •	Tres son cazadores, su cometido es lanzar la quaffle ( pelota especial ) e intentar que entre 
@@ -55,7 +55,7 @@ Para agilizar la gestión de los datos del campeonato, Albus Dumbledor, director
 					del 1er curso de ASIR del IES Alisal, para hacer una aplicación xml que valide los documentos XML con la información 
                     sobre cada uno de los partidos que tienen lugar. 
 
-					Estos ficheros XML han de contener la siguiente información sobre el partido:
+Estos ficheros XML han de contener la siguiente información sobre el partido:
 •	Equipos que lo juegan. ( Sólo pueden ser los equipos de las casas de Hogwarts ).
 •	Fecha del encuentro. 
 •	Duración del mismo. 
