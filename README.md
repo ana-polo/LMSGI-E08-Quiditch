@@ -1,4 +1,4 @@
-# LMSGI02-E01 Correo
+# LMSGI-E08-Quiditch
 
 ![Logo de Team](https://github.com/ana-polo/LMSGI02-E01/blob/main/LMSGI.gif "Team logo")
 
@@ -25,18 +25,56 @@ Ejemplo de código XML y DTD para el módulo de Lenguajes de Marcas y Sistemas d
 - *XML*
 
 - *DTD*
+
+- *XML Schema*
+
 &nbsp;
 
 ### 3. Descripción del problema
 
-📝 **TO DO**
+<details>
+<sumary>Leer las condiciones del problema</sumary>
+En el mundo mágico el principal deporte es el Quiditch, que se desarrolla mientras 14 jugadores, 
+				 7 de cada equipo, vuelan en escobas al tiempo que esquivan las bludgers ( tipo de pelota hechizada 
+				 que persigue a los jugadores de forma indiscriminada ). En cada equipo hay siete jugadores: 
+•	Tres son cazadores, su cometido es lanzar la quaffle ( pelota especial ) e intentar que entre 
+					 por uno de los aros de gol. Obtienen diez puntos cada vez que la quaffle pasa por un aro. 
+•	El guardián, vuela alrededor de los aros de gol y detiene los lanzamientos del otro equipo.
+•	Dos golpeadores, cuyo trabajo es proteger a su equipo de las bludgers y desviarlas hacia el equipo contrario. 
+•	El buscador, vuela entre cazadores, golpeadores, la quaffle y las bludgers, intentando atrapar la snitch 
+					 dorada ( una pelota pequeña con alas que vuela muy rápido y es difícil de coger, ya que está hechizada para 
+						no dejarse atrapar ) antes de que la coja el otro buscador, porque cada vez que un buscador la atrapa, su 
+						equipo gana ciento cincuenta puntos extra.
+Un partido de quidditch sólo termina cuando se atrapa la snitch, así que puede durar muchísimo ( el record 
+					son 3 meses 2 días y 3minutos ). 
+El colegio de magia y hechicería Hogwarts celebra todos los cursos un campeonato de Quidditch entre las 
+					cuatro casas del colegio, Gryffinfor, Ravenclaw, Hufflepuff y Slytherin. Los cuatro equipos compiten 
+					entre sí para luchar por la Copa del colegio.
+Para agilizar la gestión de los datos del campeonato, Albus Dumbledor, director del colegio de magia y 
+					hechicería Hogwarts, ha contratado a los mejores especialistas en lenguajes de marcas, los alumnos muggles 
+					del 1er curso de ASIR del IES Alisal, para hacer una aplicación xml que valide los documentos XML con la información 
+                    sobre cada uno de los partidos que tienen lugar. 
 
-    a.- Realizar un vocabulario interno utilizando el lenguaje DTD compatible con una instancia de un documento XML válido que estructure la información de un e-mail, que también habrá que construir. Tener en cuenta que de cada email habrá que guardar:
-            - El nombre y correo electrónico del remitente y de cada uno de los destinatarios. De estos últimos, puede que haya que conocer el tipo de destinatario del que se trata (directo, en copia o en copia oculta).   
-            - Fecha de envío del mensaje, asunto, contenido del mensaje. En ocasiones será necesario saber si el mensaje está leido o sin leer.
-        
-    b.-  Repetir el ejecicio anterior, haciendo que el vocabulario sea externo.
- 
+					Estos ficheros XML han de contener la siguiente información sobre el partido:
+•	Equipos que lo juegan. ( Sólo pueden ser los equipos de las casas de Hogwarts ).
+•	Fecha del encuentro. 
+•	Duración del mismo. 
+•	Ganador. ( Su valor será el nombre del equipo ganador ). 
+•	Arbitro. Pueden ser la profesora. Hooch o el profesor Snape.
+•	Código de identificación del partido. Está formado por las iniciales de los equipos contrincantes, en mayúsculas, seguidas de un guión y cuatro cifras que representan el año del partido.
+
+Sobre cada equipo se guardará la siguiente información:
+•	Nombre.
+•	Agrupar los jugadores que ocupan cada uno de los puestos. Hay que guardar, si es el caso, los goles que ha metido cada uno de los cazadores, las paradas del guardián y si el buscador ha capturado o no la snicht dorada. 
+•	Puntos conseguidos. 
+•	Código que lo identifica, se formará por las 3 primeras letras del nombre, en minúsculas, seguido de tres cifras. 
+
+La información que queremos guardar de cada uno de los jugadores es:
+•	Nombre. 
+•	Número de faltas cometidas, si las hay. 
+•	Código identificador, que coincide con el expediente académico. Está compuesto de 8 Caracteres alfanuméricos. 
+•	Número de cursos que lleva formando parte del equipo.
+</details>
 &nbsp;
 
 👀 **¡Atención!**
