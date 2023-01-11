@@ -50,59 +50,61 @@ IES Alisal
 
 <!ELEMENT campeonato ( partido+ )>
 
-<!-- Cada partido es jugado por 2 equipos y en el caso de que el partido aún no se haya jugado no conoceremos el ganador, luego este elemento existirá o no. -->
+	<!-- Cada partido es jugado por 2 equipos y en el caso de que el partido aún no se haya jugado no conoceremos el ganador, luego este elemento existirá o no. -->
 
-<!ELEMENT partido ( equipo+, fechaEncuentro, duracion, ganador?, arbitro )>
+	<!ELEMENT partido ( equipo+, fechaEncuentro, duracion, ganador?, arbitro )>
 
- <!ELEMENT equipo ( nombre, puestos )> 
+		 <!ELEMENT equipo ( nombre, puestos )> 
  
- <!ELEMENT fechaEncuentro ( dia, mes, anho )> 
+		 <!ELEMENT fechaEncuentro ( dia, mes, anho )> 
 
- <!ELEMENT duracion ( #PCDATA )> 
+		 <!ELEMENT duracion ( #PCDATA )> 
  
- <!ELEMENT ganador ( #PCDATA )>
+		 <!ELEMENT ganador ( #PCDATA )>
  
- <!ELEMENT arbitro ( #PCDATA )>
+		 <!ELEMENT arbitro ( #PCDATA )>
 
-<!ELEMENT nombre ( #PCDATA )>
+			<!ELEMENT nombre ( #PCDATA )>
 
-<!ELEMENT puestos ( cazadores, golpeadores, guardian, buscador )>
+			<!ELEMENT puestos ( cazadores, golpeadores, guardian, buscador )>
 
-<!ELEMENT dia ( #PCDATA )> 
-<!ELEMENT mes ( #PCDATA )>
-<!ELEMENT anho ( #PCDATA )> 
+			<!ELEMENT dia ( #PCDATA )> 
+			<!ELEMENT mes ( #PCDATA )>
+			<!ELEMENT anho ( #PCDATA )> 
 
-<!ELEMENT cazadores ( cazador+ ) >
+				<!ELEMENT cazadores ( cazador+ ) >
+				<!ELEMENT golpeadores ( golpeador+ ) >
+				<!ELEMENT guardian ( jugador, paradas )>
+				<!ELEMENT buscador ( jugador, snicth )>
 
-<!ELEMENT golpeadores ( golpeador+ ) >
-<!ELEMENT guardian ( jugador, paradas )>
+					<!ELEMENT cazador ( jugador, goles )> 
+ 
+					<!ELEMENT golpeador ( jugador )>
+	
+					<!ELEMENT jugador ( nombre, apellidos, numeroFaltas, numeroCursos )>
 
-<!ELEMENT buscador ( jugador, snicth )>
+					<!ELEMENT paradas ( #PCDATA )>
+ 
+					<!ELEMENT snicth ( #PCDATA )> 
+ 
+						<!ELEMENT goles ( #PCDATA )>
 
- <!ELEMENT cazador ( jugador, goles )> 
- <!ELEMENT jugador ( nombre, apellidos, numeroFaltas, numeroCursos )>
- <!ELEMENT golpeador ( jugador )>
- <!ELEMENT paradas ( #PCDATA )>
- <!ELEMENT snicth ( #PCDATA )> 
- <!ELEMENT goles ( #PCDATA )>
+						<!-- <!ELEMENT nombre ( #PCDATA )> Ya está definida una etiqueta terminal denominada nombre ( dentro de equipos, pero tiene validez global ) -->
 
-
-<!-- <!ELEMENT nombre ( #PCDATA )> Ya está definida una etiqueta terminal denominada nombre ( dentro de equipos, pero tiene validez global ) -->
-
-<!ELEMENT apellidos ( #PCDATA )>
-<!ELEMENT numeroFaltas ( #PCDATA )>
-<!ELEMENT numeroCursos ( #PCDATA )> 
+							<!ELEMENT apellidos ( #PCDATA )>
+							<!ELEMENT numeroFaltas ( #PCDATA )>
+							<!ELEMENT numeroCursos ( #PCDATA )> 
 
 
  <!-- ********* -->
  <!-- ATRIBUTOS -->
  <!-- ********* -->
 
- <!ATTLIST jugador
-codigoJugador CDATA #REQUIRED>
+<!ATTLIST partido
+codigoPartido CDATA #REQUIRED>
 
  <!ATTLIST equipo
 codigoEquipo CDATA #REQUIRED>
 
- <!ATTLIST partido
-codigoPartido CDATA #REQUIRED>
+<!ATTLIST jugador
+codigoJugador CDATA #REQUIRED>
