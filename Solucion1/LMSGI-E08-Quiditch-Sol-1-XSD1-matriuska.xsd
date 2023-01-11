@@ -123,7 +123,7 @@
 																						<xs:element name = "numeroCursos" type = "xs:positiveInteger" />
 																					</xs:sequence>
 
-																					<!-- codigo de jugador formado por 8 dígitos -->
+																					<!-- codigo de jugador formado por 8 caracteres alfanuméricos -->
 
 																					<xs:attribute name = "codigoJugador" use = "required">
 																						<xs:simpleType>
@@ -249,7 +249,7 @@
 																			<xs:element name = "numeroCursos" type = "xs:positiveInteger" />
 																		</xs:sequence>
 
-																		<!-- Definición del codigo de jugador formado por 8 dígitos -->
+																		<!-- Definición del codigo de jugador formado por 8 caracteres alfanuméricos -->
 
 																		<xs:attribute name = "codigoJugador" use = "required" >
 																			<xs:simpleType>
