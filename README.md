@@ -109,15 +109,19 @@ Ejemplo de código XML y DTD para el módulo de Lenguajes de Marcas y Sistemas d
 		La información que queremos guardar de cada uno de los jugadores es:
 
 			&nbsp;
+
 			- Nombre. 
 
 			&nbsp;
+
 			- Número de faltas cometidas, si las hay. 
 
 			&nbsp;
+
 			- Código identificador, que coincide con el expediente académico. Está compuesto de 8 Caracteres alfanuméricos. 
 
 			&nbsp;
+
 			- Número de cursos que lleva formando parte del equipo.
 
 </details>
