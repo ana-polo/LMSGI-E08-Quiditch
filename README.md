@@ -59,11 +59,17 @@ Ejemplo de código XML y DTD para el módulo de Lenguajes de Marcas y Sistemas d
 		sobre cada uno de los partidos que tienen lugar. 
 
 		Estos ficheros XML han de contener la siguiente información sobre el partido:
+			
 			- Equipos que lo juegan. ( Sólo pueden ser los equipos de las casas de Hogwarts ).
+			
 			- Fecha del encuentro. 
+			
 			- Duración del mismo. 
+			
 			- Ganador. ( Su valor será el nombre del equipo ganador ). 
+			
 			- Arbitro. Pueden ser la profesora. Hooch o el profesor Snape.
+			
 			- Código de identificación del partido. Está formado por las iniciales de los equipos contrincantes, en mayúsculas, seguidas de un guión y cuatro cifras que representan el año del partido.
 
 		Sobre cada equipo se guardará la siguiente información:
