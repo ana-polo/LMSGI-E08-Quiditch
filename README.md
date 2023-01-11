@@ -38,21 +38,21 @@ Ejemplo de código XML y DTD para el módulo de Lenguajes de Marcas y Sistemas d
 		7 de cada equipo, vuelan en escobas al tiempo que esquivan las bludgers ( tipo de pelota hechizada 
 		que persigue a los jugadores de forma indiscriminada ). En cada equipo hay siete jugadores:
 
-			&nbsp;
-			- Tres son cazadores, su cometido es lanzar la quaffle ( pelota especial ) e intentar que entre 
-			por uno de los aros de gol. Obtienen diez puntos cada vez que la quaffle pasa por un aro. 
+				&nbsp;
+				- Tres son cazadores, su cometido es lanzar la quaffle ( pelota especial ) e intentar que entre 
+				por uno de los aros de gol. Obtienen diez puntos cada vez que la quaffle pasa por un aro. 
 
-			&nbsp;
-			- El guardián, vuela alrededor de los aros de gol y detiene los lanzamientos del otro equipo.
+				&nbsp;
+				- El guardián, vuela alrededor de los aros de gol y detiene los lanzamientos del otro equipo.
 
-			&nbsp;
-			- Dos golpeadores, cuyo trabajo es proteger a su equipo de las bludgers y desviarlas hacia el equipo contrario. 
+				&nbsp;
+				- Dos golpeadores, cuyo trabajo es proteger a su equipo de las bludgers y desviarlas hacia el equipo contrario. 
 
-			&nbsp;
-			- El buscador, vuela entre cazadores, golpeadores, la quaffle y las bludgers, intentando atrapar la snitch 
-			 dorada ( una pelota pequeña con alas que vuela muy rápido y es difícil de coger, ya que está hechizada para 
-			no dejarse atrapar ) antes de que la coja el otro buscador, porque cada vez que un buscador la atrapa, su 
-			equipo gana ciento cincuenta puntos extra.
+				&nbsp;
+				- El buscador, vuela entre cazadores, golpeadores, la quaffle y las bludgers, intentando atrapar la snitch 
+				 dorada ( una pelota pequeña con alas que vuela muy rápido y es difícil de coger, ya que está hechizada para 
+				no dejarse atrapar ) antes de que la coja el otro buscador, porque cada vez que un buscador la atrapa, su 
+				equipo gana ciento cincuenta puntos extra.
 
 		&nbsp;
 		Un partido de quidditch sólo termina cuando se atrapa la snitch, así que puede durar muchísimo ( el record 
