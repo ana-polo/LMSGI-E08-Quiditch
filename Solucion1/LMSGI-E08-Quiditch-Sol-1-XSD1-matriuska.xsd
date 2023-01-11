@@ -364,7 +364,7 @@
 										<xs:enumeration value = "GRIFFINDOR" />
 										<xs:enumeration value = "SLYTHERING" />
 										<xs:enumeration value = "HUFFLEPUFF" />
-										<xs:enumeration value = "RAVENCLA" />
+										<xs:enumeration value = "RAVENCLAW" />
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
