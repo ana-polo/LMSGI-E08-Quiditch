@@ -1,0 +1,98 @@
+<!-- 
+Fichero: LMSGI-E08-quidditch-Sol2-DTD1-ramas.dtd
+Funcionalidad: Vocabulario de codificacion de un documento de gestión de un partido de quidicth.
+En el mundo mágico el principal deporte es el Quiditch, que se desarrolla mientras 14 jugadores, 
+				 7 de cada equipo, vuelan en escobas al tiempo que esquivan las bludgers ( tipo de pelota hechizada 
+				 que persigue a los jugadores de forma indiscriminada ). En cada equipo hay siete jugadores: 
+•	Tres son cazadores, su cometido es lanzar la quaffle ( pelota especial ) e intentar que entre 
+					 por uno de los aros de gol. Obtienen diez puntos cada vez que la quaffle pasa por un aro. 
+•	El guardián, vuela alrededor de los aros de gol y detiene los lanzamientos del otro equipo.
+•	Dos golpeadores, cuyo trabajo es proteger a su equipo de las bludgers y desviarlas hacia el equipo contrario. 
+•	El buscador, vuela entre cazadores, golpeadores, la quaffle y las bludgers, intentando atrapar la snitch 
+					 dorada ( una pelota pequeña con alas que vuela muy rápido y es difícil de coger, ya que está hechizada para 
+						no dejarse atrapar ) antes de que la coja el otro buscador, porque cada vez que un buscador la atrapa, su 
+						equipo gana ciento cincuenta puntos extra.
+Un partido de quidditch sólo termina cuando se atrapa la snitch, así que puede durar muchísimo ( el record 
+					son 3 meses 2 días y 3minutos ). 
+El colegio de magia y hechicería Hogwarts celebra todos los cursos un campeonato de Quidditch entre las 
+					cuatro casas del colegio, Gryffinfor, Ravenclaw, Hufflepuff y Slytherin. Los cuatro equipos compiten 
+					entre sí para luchar por la Copa del colegio.
+Para agilizar la gestión de los datos del campeonato, Albus Dumbledor, director del colegio de magia y 
+					hechicería Hogwarts, ha contratado a los mejores especialistas en lenguajes de marcas, los alumnos muggles 
+					del 1er curso de ASIR del IES Alisal, para hacer una aplicación xml que se encargue del trabajo. Se comenzará 
+					el trabajo haciendo un DTD para poder validar los documentos XML con la información sobre cada uno de los partidos que tienen lugar. 
+
+					Estos ficheros XML han de contener la siguiente información sobre el partido:
+•	Equipos que lo juegan. ( Sólo pueden ser los equipos de las casas de Hogwarts ).
+•	Fecha del encuentro. 
+•	Duración del mismo. 
+•	Ganador. ( Su valor será el nombre del equipo ganador ). 
+•	Arbitro. Pueden ser la profesora. Hooch o el profesor Snape.
+•	Código de identificación del partido. Está formado por las iniciales de los equipos contrincantes, en mayúsculas, seguidas de un guión y cuatro cifras que representan el año del partido.
+
+Sobre cada equipo se guardará la siguiente información:
+•	Nombre.
+•	Agrupar los jugadores que ocupan cada uno de los puestos. Hay que guardar, si es el caso, los goles que ha metido cada uno de los cazadores, las paradas del guardián y si el buscador ha capturado o no la snicht dorada. 
+•	Puntos conseguidos. 
+•	Código que lo identifica, se formará por las 3 primeras letras del nombre, en minúsculas, seguido de tres cifras. 
+
+La información que queremos guardar de cada uno de los jugadores es:
+•	Nombre. 
+•	Número de faltas cometidas, si las hay. 
+•	Código identificador, que coincide con el expediente académico. Está compuesto de 8 Caracteres alfanuméricos. 
+•	Número de cursos que lleva formando parte del equipo.
+
+Autor: Ana Polo Arozamena 
+Modulo: LMSGI
+CF: ASIR 
+IES Alisal
+-->
+
+<!ELEMENT campeonato ( partido+ )>
+
+	<!-- Cada partido es jugado por 2 equipos y en el caso de que el partido aún no se haya jugado no conoceremos el ganador, luego este elemento existirá o no. -->
+
+	<!ELEMENT partido ( equipo+, fechaEncuentro, duracion, ganador?, arbitro )>
+
+		<!ELEMENT equipo ( nombre, jugadores )>
+
+			<!ELEMENT nombre ( #PCDATA )>
+			<!ELEMENT jugadores ( jugador )>
+
+				<!ELEMENT jugador ( nombre, apellidos, numeroFaltas, numeroCursos )>
+
+					<!-- <!ELEMENT nombre ( #PCDATA )> Ya está definida una etiqueta terminal denominada nombre ( dentro de equipos, pero tiene validez global ) -->
+				
+					<!ELEMENT apellidos ( #PCDATA )>
+					<!ELEMENT numeroFaltas ( #PCDATA )>
+					<!ELEMENT numeroCursos ( #PCDATA )>
+
+					<!ELEMENT puesto ( descripcion, goles, paradas, snitch )>
+						<!ELEMENT descripcion ( #PCDATA )>
+						<!ELEMENT goles ( #PCDATA )>
+						<!ELEMENT paradas ( #PCDATA )>
+						<!ELEMENT snitch ( #PCDATA )>
+
+					<!ATTLIST jugador
+						codigoJugador CDATA #REQUIRED>
+			
+			<!ATTLIST equipo
+				codigoEquipo CDATA #REQUIRED>
+
+
+
+		<!ELEMENT fechaEncuentro ( dia, mes, anho )>
+			<!ELEMENT dia ( #PCDATA )>
+			<!ELEMENT mes ( #PCDATA )>
+			<!ELEMENT anho ( #PCDATA )>
+
+		<!ELEMENT duracion ( #PCDATA )>  
+		<!ELEMENT ganador ( #PCDATA )>
+		<!ELEMENT arbitro ( #PCDATA )>
+
+<!-- ********* -->
+<!-- Atributos -->
+<!-- ********* -->
+
+<!ATTLIST partido
+	codigoPartido CDATA #REQUIRED>
